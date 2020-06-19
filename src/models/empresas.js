@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 100
     },
-    nomeFastasia: {
+    nomeFantasia: {
         type: String,
         required: true,
         minlength: 3,
@@ -40,4 +40,6 @@ const UserSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 100
     },
-})
+});
+
+mongoose.model('Empresas', UserSchema);
