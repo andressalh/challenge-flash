@@ -7,35 +7,26 @@ const UserSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 100
     },
-    nomeFantasia: {
+    sobrenome: {
         type: String,
         required: true,
         minlength: 3,
         maxlength: 100
     },
-    cnpj: {
+    cpf: {
         type: Number,
         required: true,
         unique:true,
-        min: 1,
-        maxlength: 14
+        min: 11,
+        maxlength: 11
     },
-    endereco: {
-        cidade: {
-            type: String,
-            required: true,
-            minlength: 3,
-            maxlength: 100
-        },
-        estado: {
-            type: String,
-            required: true,
-            minlength: 2,
-            maxlength: 2,
-            uppercase: true
-        },
+    email: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 50
     },
-    beneficiosEscolhidos: {
+    empresa: {
         type: String,
         required: true,
         minlength: 3,
@@ -43,4 +34,5 @@ const UserSchema = new mongoose.Schema({
     },
 });
 
-mongoose.model('Empresa', UserSchema);
+const Funcionario = mongoose.model('Funcionario', UserSchema);
+module.exports = Funcionario;
