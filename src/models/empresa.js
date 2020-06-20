@@ -19,7 +19,8 @@ const UserSchema = new mongoose.Schema({
         required: true,
         unique:true,
         min: 1,
-        maxlength: 14
+        maxlength: 14,
+
     },
     endereco: {
         type: String,

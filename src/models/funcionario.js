@@ -27,10 +27,9 @@ const UserSchema = new mongoose.Schema({
         maxlength: 50
     },
     empresa: {
-        type: String,
-        required: true,
-        minlength: 3,
-        maxlength: 100
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Empresa',
+        require: true,
     },
 });
 
