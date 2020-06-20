@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json()); // allow insert data json 
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/challenge', {useNewUrlParser:true}) // conect db
+mongoose.connect('mongodb://localhost:27017/challenge', {useNewUrlParser:true}) // connect db
 
 requireDir('./src/models'); //manage models - 
 

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Empresa = mongoose.model('Empresas');
+const Empresa = mongoose.model('Empresa');
 
 module.exports = {
     async insert ( req, res){

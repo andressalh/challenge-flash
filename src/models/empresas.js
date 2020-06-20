@@ -31,7 +31,8 @@ const UserSchema = new mongoose.Schema({
             type: String,
             required: true,
             minlength: 2,
-            maxlength: 2
+            maxlength: 2,
+            uppercase: true
         },
     },
     beneficiosEscolhidos: {
@@ -42,4 +43,4 @@ const UserSchema = new mongoose.Schema({
     },
 });
 
-mongoose.model('Empresas', UserSchema);
+mongoose.model('Empresa', UserSchema);
