@@ -19,8 +19,13 @@ class Home extends Component {
 
     }
 
-
+ 
     render(){
+
+        /*function handleSubimit(id) {
+           
+            
+        }*/
         return (
             
             <Fragment>
@@ -49,13 +54,16 @@ class Home extends Component {
                                 </select> 
                                 
                                 
+                                
+                                
                                 <Link to={{
                                 pathname: "/funcionarios",
                                 data: this.state.selectedEmpresa,
                                 }}> 
                                 
-                                <button type="submit">Ver funcionários</button>
+                                <button renderAs="button"type="submit">Ver funcionários</button>
                                 </Link>
+                               
 
 
                             </form>
