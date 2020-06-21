@@ -1,27 +1,26 @@
 import React, { Component, Fragment } from 'react';
 import api from '../../services/api';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
     state = {
         empresa: [],
-        selectedEmpresa: 0,
+        selectedEmpresa: '',
     }
 
-    
-    
     async componentDidMount(){
 
        await api.get('/empresa').then((res) =>{
             this.setState({empresa: res.data['empresa']});
-            console.log(res.data.empresa);
+            
         });
 
     }
     
-    
+  
     render(){
-
+        
         return (
             
             <Fragment>
@@ -32,16 +31,23 @@ class Home extends Component {
                         <select
                         name="empresa"
                         id="empresa"
-                        
+                        onChange={ (e) => {this.setState({selectedEmpresa: e.target.value }) }}
                         value={this.state.selectedEmpresa}
                         >
+                            
                             <option value="" >Selecione uma empresa</option>
                             
-                            {this.state.empresa.map(emp => (
-                                <option key={emp._id} value={emp.nome}>{emp.nome}</option>
+                            {this.state.empresa.map(emp => (            
+                               <option key={emp._id} value={emp._id} >{emp.nome}</option>
+                            
                             ))}
+                            
                         </select>
-                     
+                        {console.log("select: " +this.state.selectedEmpresaID)}
+                     <Link to={{
+                         pathname: "/empresas",
+                         data: this.state.selectedEmpresa
+                     }}> Pesquisar</Link>
                      </div>)
                  : (<div><h1>Loading</h1></div>)}
 

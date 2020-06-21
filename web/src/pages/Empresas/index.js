@@ -3,33 +3,37 @@ import api from '../../services/api';
 
 class Home extends Component {
 
+    
     state = {
-        empresa: [],
+        funcionarios: [],
     }
 
     async componentDidMount(){
 
-       await api.get('/empresa').then((res) =>{
-            this.setState({empresa: res.data['empresa']});
-            console.log(res.data.empresa);
+        const { data } = this.props.location;
+
+        await api.get(`/funcionario/${data}`).then((res) =>{
+            this.setState({funcionarios: res.data['funcionario']});
+            console.log("funcionarios: " +this.state.funcionarios);
+            console.log("data: " +data);
         });
 
     }
-
+            
     render(){
-        console.log("empresa: " +this.state.empresa);
+        
         return (
             
             <Fragment>
-                
-                {this.state.empresa ? (
+                {this.state.funcionario ? (
                     
-                   <div>
-                    {this.state.empresa.map(emp => (
-                        <h1>{emp.nome}</h1>
-                    ))}
-                    </div>)
-                : (<div><h1>Loading</h1></div>)}
+                    <div>
+                     {this.state.funcionario.map(func => (
+                         <h1>{func.nome}</h1>
+                     ))}
+                     </div>)
+                 : (<div><h1>Loading</h1></div>)}
+    
                 
     
             </Fragment>

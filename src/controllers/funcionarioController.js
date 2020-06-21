@@ -9,7 +9,7 @@ router.post('/create', async(req,res) => {
         if ( await Funcionario.findOne( { cpf } ))
             return res.status(400).send({error: 'Cpf do funcionário já cadastrado'});
         
-        const id = '5eee3595e900a62f98f17b35';
+        const id = '5eee35a2e900a62f98f17b36';
         const funcionario = await Funcionario.create({ ...req.body, empresa: id } );
         return res.send({ funcionario});
     } catch( err){
@@ -21,12 +21,14 @@ router.get('/:empresaId', async(req,res) => {
 
     var query = { empresa: req.params.empresaId}
     try{
-        const funcionario = await Funcionario.find().populate('empresa');
+        const funcionario = await Funcionario.find(query).populate('empresa');
         return res.send({ funcionario});
     } catch( err){
         return res.status(400).send({ error: 'Funcionario não encontrada' });
     }
 });
+
+
 
 router.get('/', async(req,res) => {
     try{
