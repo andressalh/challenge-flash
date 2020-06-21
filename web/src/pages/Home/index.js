@@ -20,7 +20,6 @@ class Home extends Component {
     }
 
 
-
     render(){
         return (
             
@@ -34,23 +33,26 @@ class Home extends Component {
                                 <select
                                 name="empresa"
                                 id="empresa"
+                                useref="empresaSelected"
                                 onChange={ (e) => {this.setState({selectedEmpresa: e.target.value }) }}
                                 value={this.state.selectedEmpresa}
+                                required
                                 >
                                     
-                                    <option value="" >Selecione uma empresa</option>
+                                    <option value="0" >Selecione uma empresa</option>
                                     
                                     {this.state.empresa.map(emp => (            
                                     <option key={emp._id} value={emp._id} >{emp.nome}</option>
                                     
                                     ))}
                                     
-                                </select>                  
+                                </select> 
+                                
                                 <Link to={{
                                 pathname: "/funcionarios",
                                 data: this.state.selectedEmpresa,
                                 }}> 
-                                    <button type="submit">Ver funcionários</button>
+                                <button type="submit" >Ver funcionários</button>
                                 </Link>
 
 
