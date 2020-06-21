@@ -40,4 +40,4 @@ router.get('/', async(req,res) => {
 });
 
 
-module.exports = app => app.use('/funcionario', router);
+module.exports = app => app.use('/funcionarios', router);

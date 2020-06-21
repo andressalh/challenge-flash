@@ -12,12 +12,12 @@ class Home extends Component {
 
         const { data } = this.props.location;
 
-        await api.get(`/funcionario/${data}`).then((res) =>{
+        console.log("data: " +data);
+        await api.get(`/funcionarios/${data}`).then((res) =>{
             this.setState({funcionarios: res.data['funcionario']});
             console.log("funcionarios: " +this.state.funcionarios);
-            console.log("data: " +data);
+            
         });
-
     }
             
     render(){
@@ -25,14 +25,18 @@ class Home extends Component {
         return (
             
             <Fragment>
-                {this.state.funcionario ? (
+                {this.state.funcionarios ? (
+      
+                <div>
+                   
+                        
+                    {this.state.funcionarios.map(func => (            
+                        <h1>{func.nome}</h1>
                     
-                    <div>
-                     {this.state.funcionario.map(func => (
-                         <h1>{func.nome}</h1>
-                     ))}
-                     </div>)
-                 : (<div><h1>Loading</h1></div>)}
+                    ))}
+
+                </div>)
+            : (<div><h1>Loading</h1></div>)}
     
                 
     

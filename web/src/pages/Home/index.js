@@ -20,7 +20,6 @@ class Home extends Component {
     
   
     render(){
-        
         return (
             
             <Fragment>
@@ -43,9 +42,9 @@ class Home extends Component {
                             ))}
                             
                         </select>
-                        {console.log("select: " +this.state.selectedEmpresaID)}
+                        {console.log("select: " +this.state.selectedEmpresa)}
                      <Link to={{
-                         pathname: "/empresas",
+                         pathname: "/funcionarios",
                          data: this.state.selectedEmpresa
                      }}> Pesquisar</Link>
                      </div>)
