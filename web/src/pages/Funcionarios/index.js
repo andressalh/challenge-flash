@@ -1,11 +1,14 @@
 import React, { Component, Fragment } from 'react';
 import api from '../../services/api';
-
+import { Table } from 'antd';
+ 
 class Home extends Component {
 
     
     state = {
         funcionarios: [],
+
+        
     }
 
     async componentDidMount(){
@@ -15,30 +18,44 @@ class Home extends Component {
         console.log("data: " +data);
         await api.get(`/funcionarios/${data}`).then((res) =>{
             this.setState({funcionarios: res.data['funcionario']});
-            console.log("funcionarios: " +this.state.funcionarios);
-            
+            console.log("funcionarios: " +this.state.funcionarios);           
         });
-    }
-            
-    render(){
         
+        
+    }
+           
+    render(){
+
+             
+        
+            const data = [];
+            
+            this.state.funcionarios.map(func => {
+                data.push({
+                    key: func._id,
+                    name: func.nome,
+                    email: func.email,
+                })                   
+            }) 
+            
+
+          const columns = [
+            {
+              title: 'Nome',
+              dataIndex: 'name',
+              key: 'name',
+            },
+            {
+              title: 'Email',
+              dataIndex: 'email',
+              key: 'email',
+            },
+          ];
+
         return (
             
             <Fragment>
-                {this.state.funcionarios ? (
-      
-                <div>
-                   
-                        
-                    {this.state.funcionarios.map(func => (            
-                        <h1>{func.nome}</h1>
-                    
-                    ))}
-
-                </div>)
-            : (<div><h1>Loading</h1></div>)}
-    
-                
+            <Table dataSource={data} columns={columns} />
     
             </Fragment>
         )

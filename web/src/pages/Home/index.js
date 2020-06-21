@@ -17,8 +17,7 @@ class Home extends Component {
         });
 
     }
-    
-  
+
     render(){
         return (
             
@@ -41,8 +40,7 @@ class Home extends Component {
                             
                             ))}
                             
-                        </select>
-                        {console.log("select: " +this.state.selectedEmpresa)}
+                        </select>                  
                      <Link to={{
                          pathname: "/funcionarios",
                          data: this.state.selectedEmpresa
