@@ -1,0 +1,26 @@
+.div-voltar svg {
+    margin-right: 0.5rem!important;
+}
+.div-voltar svg {
+    justify-content: center;
+}
+
+.div-procurar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.div-procurar #empresa {
+    margin-right: 2rem;
+    padding: 0.25rem 0.5rem;
+}
+.div-procurar a {
+    color: inherit;
+}
+.div-procurar button {
+    padding: 0.15rem 0.5rem;
+}
+

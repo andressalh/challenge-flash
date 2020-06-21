@@ -1,0 +1,14 @@
+.div-voltar a, .div-voltar a:hover {
+    text-decoration: none;
+    outline: 0;
+    color: #000;
+}
+.div-voltar {
+    padding: 1rem;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+}
+.div-title h2 {
+    text-align: center;
+}
