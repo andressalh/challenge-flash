@@ -39,7 +39,7 @@ class Home extends Component {
                                 required
                                 >
                                     
-                                    <option value="0" >Selecione uma empresa</option>
+                                    <option value="" >Selecione uma empresa</option>
                                     
                                     {this.state.empresa.map(emp => (            
                                     <option key={emp._id} value={emp._id} >{emp.nome}</option>
@@ -48,11 +48,13 @@ class Home extends Component {
                                     
                                 </select> 
                                 
+                                
                                 <Link to={{
                                 pathname: "/funcionarios",
                                 data: this.state.selectedEmpresa,
                                 }}> 
-                                <button type="submit" >Ver funcionários</button>
+                                
+                                <button type="submit">Ver funcionários</button>
                                 </Link>
 
 
