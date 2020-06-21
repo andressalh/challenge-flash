@@ -1,30 +1,38 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import api from '../../services/api';
-
 
 class Home extends Component {
 
-    componentDidMount(){
+    state = {
+        empresa: [],
+    }
 
-        try {
-            console.log("entrou")
-            api.get('/empresa').then((res) =>{
-                console.log("entrosu")
-                console.log(res);
-            });
-            
-          } catch (error) {
-            console.error(error);
-          }
+    async componentDidMount(){
+
+       await api.get('/empresa').then((res) =>{
+            this.setState({empresa: res.data['empresa']});
+            console.log(res.data.empresa);
+        });
 
     }
-    render(){
 
+    render(){
+        console.log("empresa: " +this.state.empresa);
         return (
-            <div id="page-home">
-                <h1>Teste</h1>
+            
+            <Fragment>
+                
+                {this.state.empresa ? (
+                    
+                   <div>
+                    {this.state.empresa.map(emp => (
+                        <h1>{emp.nome}</h1>
+                    ))}
+                    </div>)
+                : (<div><h1>Loading</h1></div>)}
+                
     
-            </div>
+            </Fragment>
         )
     }
     
