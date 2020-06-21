@@ -5,8 +5,11 @@ class Home extends Component {
 
     state = {
         empresa: [],
+        selectedEmpresa: 0,
     }
 
+    
+    
     async componentDidMount(){
 
        await api.get('/empresa').then((res) =>{
@@ -15,23 +18,34 @@ class Home extends Component {
         });
 
     }
-
+    
+    
     render(){
-        console.log("empresa: " +this.state.empresa);
+
         return (
             
             <Fragment>
-                
-                {this.state.empresa ? (
-                    
-                   <div>
-                    {this.state.empresa.map(emp => (
-                        <h1>{emp.nome}</h1>
-                    ))}
-                    </div>)
-                : (<div><h1>Loading</h1></div>)}
-                
-    
+               {this.state.empresa ? (
+      
+                    <div>
+                        <label htmlFor="empresa"></label>
+                        <select
+                        name="empresa"
+                        id="empresa"
+                        
+                        value={this.state.selectedEmpresa}
+                        >
+                            <option value="" >Selecione uma empresa</option>
+                            
+                            {this.state.empresa.map(emp => (
+                                <option key={emp._id} value={emp.nome}>{emp.nome}</option>
+                            ))}
+                        </select>
+                     
+                     </div>)
+                 : (<div><h1>Loading</h1></div>)}
+
+                 
             </Fragment>
         )
     }
