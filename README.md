@@ -182,7 +182,7 @@ npm add react-select
 
 <h3>Popular o banco de dados</h3>
 
-Foi utilizado o insomnia para popular o banco de dados:
+- Foi utilizado o insomnia para popular o banco de dados:
 
 Rotas:
 - localhost:300/empresa/create
