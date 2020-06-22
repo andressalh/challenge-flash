@@ -3,8 +3,8 @@
 
 - [Sobre](#sobre)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Database](#database)
 - [Back-end](#back-end)
+- [Database](#database)
 - [Front-end](#front-end)
 - [Iniciar aplicação](#inicializacao)
 
@@ -25,7 +25,22 @@ O projeto foi desenvolvido utilizando
 - [Ant design](https://ant.design/)
 - [Mongodb](https://www.mongodb.com/)
 
+
+<a id="back-end"></a>
+<h1>Back end</h1>
+
+<h2>Dependências: </h2>
+
+- Express
+- Cors
+
+<h3>Comandos iniciais</h3>
+
+```
+npm init -y
+```
 <a id="database"></a>
+
 <h1>Database</h1>
 
 Foi utilizado o <strong>Mongodb</strong> como banco de dados.
@@ -53,20 +68,6 @@ O <strong>Mongoose</strong> é uma ferramenta de modelagem de objeto MongoDB.
 
 ```
 npm i mongoose
-```
-
-<a id="back-end"></a>
-<h1>Back end</h1>
-
-<h2>Dependências: </h2>
-
-- Express
-- Cors
-
-<h3>Comandos iniciais</h3>
-
-```
-npm init -y
 ```
 
 <h3>Express</h3>
