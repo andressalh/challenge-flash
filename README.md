@@ -10,7 +10,7 @@
 
 <a id="sobre"></a>
 
-Essa aplicação permite adicionar uma empresa e funcinários utilizando <strong>JavaScript</strong>. Foi realizado requisções <strong>get</strong> and <strong>post</strong> para que seja possível mostrar os dados retornados pela API no website.
+Essa aplicação permite adicionar uma empresa e funcinários utilizando <strong>JavaScript</strong>. Foiram realizadas requisções <strong>post</strong> para adicionar um empresa e/ou um funcionário e <strong>get</strong> para que seja possível mostrar os dados retornados pela API no website.
 
 
 <a id="documentacao"></a>
