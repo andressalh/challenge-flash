@@ -29,13 +29,9 @@ O projeto foi desenvolvido utilizando
 <a id="back-end"></a>
 <h1>Back end</h1>
 
-<h2>Dependências: </h2>
-
-- Express
-- Cors
-
 <h3>Comandos iniciais</h3>
 
+- Download e instalação do node js.
 ```
 npm init -y
 ```
@@ -69,6 +65,11 @@ O <strong>Mongoose</strong> é uma ferramenta de modelagem de objeto MongoDB.
 ```
 npm i mongoose
 ```
+
+<h2>Dependências: </h2>
+
+- Express
+- Cors
 
 <h3>Express</h3>
 
