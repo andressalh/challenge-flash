@@ -2,7 +2,6 @@
 # Index
 
 - [Sobre](#sobre)
-- [Documentação](#documentacao)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Database](#database)
 - [Back-end](#back-end)
@@ -14,11 +13,6 @@
 Criação de empresa e funcinários utilizando javascript. Utilizar a API criado e fazer requisição get para pegar os dados das empresas e funcionários e mostrar no frontend utilizando react. 
 
 <a id="documentacao"></a>
-
-## :file_folder: Documentação
-
-Para fixar melhor o conteúdo e conceitos fiz algumas anotações.
-<a id="tecnologias-utilizadas"></a>
 
 ## :rocket: Tecnologias Utilizadas
 
