@@ -29,10 +29,11 @@ class Home extends Component {
         return (
             
             <Fragment>
-                <div>
+                <div className="div-home">
                     {this.state.empresa ? (
       
                         <div className="div-procurar">
+                            <h2>Selecione uma empresa para ver a relacão de funcionários: </h2>
                             <form>
                                 <label htmlFor="empresa"></label>
                                 <select
@@ -44,7 +45,7 @@ class Home extends Component {
                                 required
                                 >
                                     
-                                    <option value="" >Selecione uma empresa</option>
+                                    <option value="" >Todas Empresas</option>
                                     
                                     {this.state.empresa.map(emp => (            
                                     <option key={emp._id} value={emp._id} >{emp.nome}</option>
@@ -61,7 +62,7 @@ class Home extends Component {
                                 data: this.state.selectedEmpresa,
                                 }}> 
                                 
-                                <button renderAs="button"type="submit">Ver funcionários</button>
+                                <button type="submit">Ver funcionários</button>
                                 </Link>
                                
 

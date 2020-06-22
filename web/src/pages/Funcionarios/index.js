@@ -39,15 +39,17 @@ class Home extends Component {
                     sobrenome: func.sobrenome,
                     cpf: func.cpf,
                     email: func.email,
+                    emp: func.empresa.nome,
+                    
                 })                   
             }) 
-            
+
 
           const columns = [
             {
-              title: 'Nome',
-              dataIndex: 'name',
-              key: 'name',
+                title: 'Nome',
+                dataIndex: 'name',
+                key: 'name',
             },
             {
                 title: 'Sobrenome',
@@ -60,9 +62,14 @@ class Home extends Component {
                 key: 'cpf',
             },
             {
-              title: 'Email',
-              dataIndex: 'email',
-              key: 'email',
+                title: 'Email',
+                dataIndex: 'email',
+                key: 'email',
+            },
+            {
+                title: 'Empresa',
+                dataIndex: 'emp',
+                key: 'emp',
             },
           ];
 

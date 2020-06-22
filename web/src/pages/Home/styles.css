@@ -5,7 +5,7 @@
     justify-content: center;
 }
 
-.div-procurar {
+.div-home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,4 +23,27 @@
 .div-procurar button {
     padding: 0.15rem 0.5rem;
 }
+.div-procurar {
+    border: 1px solid #D0D0D0;
+    height: 65vh;
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-procurar h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
 
+
+@media all and (max-width: 500px) {
+
+    .div-procurar {
+        height: 41vh;
+        width: 93vw;
+    }
+}
