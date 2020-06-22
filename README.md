@@ -38,11 +38,10 @@ O projeto foi desenvolvido utilizando
 npm init -y
 ```
 
-- Criar as pastas para organizar o proejto
+<h3>Criar as pastas para organizar o proejto<h3>
 - src 
--- controllers
--- database
--- models
+  
+Dentro de src criar: controllers, database e models
 
 <a id="database"></a>
 
