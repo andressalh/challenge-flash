@@ -10,7 +10,8 @@
 
 <a id="sobre"></a>
 
-Criação de empresa e funcinários utilizando javascript. Utilizar a API criado e fazer requisição get para pegar os dados das empresas e funcionários e mostrar no frontend utilizando react. 
+Essa aplicação permite adicionar uma empresa e funcinários utilizando <strong>JavaScript</strong>. Foi realizado requisções <strong>get</strong> and <strong>post</strong> para que seja possível mostrar os dados retornados pela API no website.
+
 
 <a id="documentacao"></a>
 
