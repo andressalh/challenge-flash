@@ -10,7 +10,7 @@
 
 <a id="sobre"></a>
 
-Essa aplicação permite adicionar uma empresa e funcinários utilizando <strong>JavaScript</strong>. Foiram realizadas requisções <strong>post</strong> para adicionar um empresa e/ou um funcionário e <strong>get</strong> para que seja possível mostrar os dados retornados pela API no website.
+Essa aplicação permite adicionar uma empresa e funcinários utilizando <strong>JavaScript</strong>. Foram realizadas requisções <strong>post</strong> para adicionar um empresa e/ou um funcionário e <strong>get</strong> para que seja possível mostrar os dados retornados pela API no website.
 
 
 <a id="documentacao"></a>
@@ -35,7 +35,7 @@ Foi utilizado o <strong>Mongodb</strong> como banco de dados.
 - Mongodb
 - Mongoose
 
-<h3>sqlite3</h3>
+<h3>Mongodb</h3>
   
 Instalação do driver <strong>Mongodb</strong> na aplicação.
 
@@ -79,11 +79,12 @@ O Express é responsável pelo roteamento do servidor.
 npm install express
 ```
 
-<h3>cors</h3>
+<h3>Cors</h3>
 
 O Cors permite que outras urls acessem nossa API.  
 
-```npm install cors
+```
+npm install cors
 ```
 
 <a id="front-end"></a>
@@ -93,7 +94,7 @@ O Cors permite que outras urls acessem nossa API.
 
 - Axios
 - React router dom
-- React-icons
+- React icons
 - Ant Design
 - React Select
 
@@ -103,7 +104,7 @@ O Cors permite que outras urls acessem nossa API.
 Para começar a parte front end, executar o react app.
 
  ```
- npx create-react-app nomedapasta
+ npx create-react-app nomedoApp
  ```
 
 <h3>Axios</h3>
@@ -124,7 +125,7 @@ O React Router DOM será responsável pelo roteamento da aplicação web.
 ```
 npm install react-router-dom
 ```
-<h3>React-icons</h3>
+<h3>React icons</h3>
 
 O react-icons permite usar icons nas aplicações.
 
@@ -150,7 +151,7 @@ Foi utilizado a bibioteca <strong>Ant Design</strong> que permite construir de f
 - Instalação:
 
 ```
-npm install axios
+npm install antd
 ```
 
 <h3>React select</h3>
@@ -174,10 +175,11 @@ Foi utilizado o insomnia para popular o banco de dados:
 
 Rotas:
 - localhost:300/empresa/create
-- localhost:300/empresa/funcionarios
+- localhost:300/funcionarios/create
 
 Comandos:
 
+- Primeiro rodar o backend.
 <h5>Back end</h5>
 
 ```
