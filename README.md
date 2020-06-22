@@ -30,11 +30,6 @@ O projeto foi desenvolvido utilizando
 - [Ant design](https://ant.design/)
 - [Mongodb](https://www.mongodb.com/)
 
-
-<p align="center">
-  <img width="200" height="80" src="https://github.com/andressalh/next-level-week/blob/master/rockset/web/src/assets/logo.svg">
-</p>
-
 <a id="database"></a>
 <h1>Database</h1>
 
