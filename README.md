@@ -178,7 +178,7 @@ npm add react-select
 
 <h3>Criação do banco</h3>
 
-Criar mongodb database "empresas"
+- Criar mongodb database "empresas"
 
 <h3>Popular o banco de dados</h3>
 
