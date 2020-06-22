@@ -9,6 +9,16 @@
     color: rgba(0, 0, 0, 0.85);
     font-weight: 500;
 }
+.div-voltar svg {
+    justify-content: center;
+    color: #86bbd6;
+}
 .div-title h2 {
     text-align: center;
+}
+.ant-pagination-item-active a {
+    color: #86bbd6;
+}
+.ant-pagination-item-active {
+    border-color: #86bbd6;
 }

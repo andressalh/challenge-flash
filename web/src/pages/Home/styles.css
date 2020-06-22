@@ -1,9 +1,7 @@
 .div-voltar svg {
     margin-right: 0.5rem!important;
 }
-.div-voltar svg {
-    justify-content: center;
-}
+
 
 .div-home {
     display: flex;
@@ -21,7 +19,10 @@
     color: inherit;
 }
 .div-procurar button {
-    padding: 0.15rem 0.5rem;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    background-color: #86bbd6;
+    border: none;
 }
 .div-procurar {
     border: 1px solid #D0D0D0;

@@ -35,8 +35,7 @@ class Home extends Component {
             this.state.funcionarios.map(func => {
                 data.push({
                     key: func._id,
-                    name: func.nome,
-                    sobrenome: func.sobrenome,
+                    name: func.nome + " " + func.sobrenome,
                     cpf: func.cpf,
                     email: func.email,
                     emp: func.empresa.nome,
@@ -50,11 +49,6 @@ class Home extends Component {
                 title: 'Nome',
                 dataIndex: 'name',
                 key: 'name',
-            },
-            {
-                title: 'Sobrenome',
-                dataIndex: 'sobrenome',
-                key: 'sobrenome',
             },
             {
                 title: 'CPF',
@@ -83,7 +77,7 @@ class Home extends Component {
                 Voltar para home 
             </Link>                           
             </div> 
-            <div className="div-title"> <h2>Funcionários - {this.state.empresa.nome}</h2></div>
+            <div className="div-title"> <h2>Funcionários  {this.state.empresa.nome}</h2></div>
             
             <Table dataSource={data} columns={columns} />
             
