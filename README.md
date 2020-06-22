@@ -32,9 +32,18 @@ O projeto foi desenvolvido utilizando
 <h3>Comandos iniciais</h3>
 
 - Download e instalação do node js.
+- Iniciar o projeto:
+
 ```
 npm init -y
 ```
+
+- Criar as pastas para organizar o proejto
+- src 
+-- controllers
+-- database
+-- models
+
 <a id="database"></a>
 
 <h1>Database</h1>
