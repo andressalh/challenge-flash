@@ -3,8 +3,8 @@
 
 - [Sobre](#sobre)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Database](#database)
 - [Back-end](#back-end)
+- [Database](#database)
 - [Front-end](#front-end)
 - [Iniciar aplicação](#inicializacao)
 
@@ -25,7 +25,27 @@ O projeto foi desenvolvido utilizando
 - [Ant design](https://ant.design/)
 - [Mongodb](https://www.mongodb.com/)
 
+
+<a id="back-end"></a>
+<h1>Back end</h1>
+
+<h3>Comandos iniciais</h3>
+
+- Download e instalação do node js.
+- Iniciar o projeto:
+
+```
+npm init -y
+```
+
+<h5>Criar as pastas para organizar o proejto</h5>
+  
+- src 
+  
+- Dentro de src criar: controllers, database e models
+
 <a id="database"></a>
+
 <h1>Database</h1>
 
 Foi utilizado o <strong>Mongodb</strong> como banco de dados.
@@ -55,19 +75,10 @@ O <strong>Mongoose</strong> é uma ferramenta de modelagem de objeto MongoDB.
 npm i mongoose
 ```
 
-<a id="back-end"></a>
-<h1>Back end</h1>
-
 <h2>Dependências: </h2>
 
 - Express
 - Cors
-
-<h3>Comandos iniciais</h3>
-
-```
-npm init -y
-```
 
 <h3>Express</h3>
 
@@ -167,11 +178,11 @@ npm add react-select
 
 <h3>Criação do banco</h3>
 
-Criar mongodb database "empresas"
+- Criar mongodb database "empresas"
 
 <h3>Popular o banco de dados</h3>
 
-Foi utilizado o insomnia para popular o banco de dados:
+- Foi utilizado o insomnia para popular o banco de dados:
 
 Rotas:
 - localhost:300/empresa/create
