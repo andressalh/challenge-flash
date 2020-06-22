@@ -178,10 +178,12 @@ Rotas:
 Comandos:
 
 <h5>Back end</h5>
+
 ```
 node src/index.js
 ```
 <h5>Front end</h5>
+
 ```
 npm start
 ```
