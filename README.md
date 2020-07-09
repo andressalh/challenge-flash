@@ -38,7 +38,7 @@ O projeto foi desenvolvido utilizando
 npm init -y
 ```
 
-<h5>Criar as pastas para organizar o proejto</h5>
+<h5>Criar as pastas para organizar o projeto</h5>
   
 - src 
   
